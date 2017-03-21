@@ -1,0 +1,308 @@
+QWidget#cld_widget_title{
+    background-color: rgb(33, 33, 33);
+}
+QWidget#cld_widget{
+    background-color: rgb(27, 27, 27);
+}
+QWidget#main_widget{
+    background-color: rgb(19, 19, 19);
+}
+QWidget#black_widget{
+    background-color: rgb(16, 16, 16);
+}
+QWidget#title_setup_button_widget{
+    background-color: rgb(50, 50, 50);
+}
+QDialog#cld_dialog{
+    background-color: rgb(27, 27, 27);
+}
+QToolBar#mainframToolBar{
+    background-color: rgb(19, 19, 19);
+}
+QProgressBar#pcprogress {
+    background-color: rgb(20, 20, 20);
+    border: 0px;
+    width:100px;
+    height:10px;
+}
+QProgressBar#pcprogress::chunk {
+    background-image:url(:/Perceptron/Resources/button/progressbar.png);
+}
+QProgressBar#powerprogress {
+    background-color: rgb(20, 20, 20);
+    border: 0px;
+    width:14px;
+    height:7px;
+}
+QProgressBar#powerprogress::chunk {
+    background-color: rgb(14, 227, 251);
+    width: 2px;
+    margin-right: 2px;
+}
+QProgressBar#powerprogressred {
+    background-color: rgb(20, 20, 20);
+    border: 0px;
+    width:14px;
+    height:7px;
+}
+QProgressBar#powerprogressred::chunk {
+    background-color: rgb(251, 48, 48);
+    width: 2px;
+    margin-right: 2px;
+}
+QProgressBar#devcal {
+    background-color: rgb(20, 20, 20);
+    border: 0px;
+    width:74px;
+    height:8px;
+    text-align :right;
+}
+QProgressBar#devcal::chunk {
+    background-color: rgb(196, 196, 196);
+}
+QLineEdit#grayedit{
+    border: 1px solid rgb(47, 47, 47);
+    background-color: rgb(19, 19, 19);
+    selection-color: rgb(99, 99, 99);
+    selection-background-color: rgb(150, 150, 150);
+    height: 30px;
+    padding: 5px;
+    color:#999999;
+    text-align: center;
+}
+QLineEdit#grayedit:disabled{
+    background-color: rgb(33, 33, 33);
+}
+QCheckBox#rigidcheckbox{
+    color: rgb(153, 153, 153);
+}
+QCheckBox#rigidcheckbox::indicator:unchecked{
+    image:url(:/Perceptron/Resources/button/check_unchecked.png);
+    width:15px;
+    height:15px;
+}
+QCheckBox#rigidcheckbox::indicator:checked{
+    image:url(:/Perceptron/Resources/button/check_checked.gif);
+    width:15px;
+    height:15px;
+}
+QPushButton#setupbtn {
+    border: 0px;
+    background-color: rgb(19, 19, 19);
+    color: #666666;
+}
+QPushButton#setupbtn:checked {
+    background-color: rgb(102, 102, 102);
+    color: #ffffff;
+}
+QPushButton#languagebtn {
+    border: 2px solid #323232;
+    background-color: rgb(19, 19, 19);
+    color: #999999;
+}
+QPushButton#languagebtn:checked {
+    background-color: rgb(102, 102, 102);
+    color: #ffffff;
+}
+QPushButton#systemMenu{
+    background-color: transparent;
+    padding-left:0px;
+    padding-right:0px;
+    color: #999999;
+}
+QPushButton#systemMenu::menu-indicator {
+    image: url(:/Perceptron/Resources/button/server_arrow.png);
+    subcontrol-origin: padding;
+    subcontrol-position: center right;
+    margin-left: 7px;
+}
+QPushButton#noborder_button {
+    border: 0px solid #FFFFFF;
+}
+QPushButton#configbutton{
+    border: 0px;
+    border-image:url(:/Perceptron/Resources/button/config_normal.png);
+}
+QPushButton#configbutton:hover{
+    border-image:url(:/Perceptron/Resources/button/config_hover.png);
+}
+QPushButton#closebutton{
+    border: 0px;
+    border-image:url(:/Perceptron/Resources/button/config_normal.png);
+}
+QPushButton#closebutton:hover{
+    border-image:url(:/Perceptron/Resources/button/config_hover.png);
+}
+QPushButton#grayButton{
+    border: 2px solid #131313;
+    background-color: #323232;
+    height: 40px;
+    color: #c4c4c4;
+    font-size: 14px;
+    font-family: "Arial";
+    font-weight:400;
+    text-align: center;
+}
+QPushButton#grayButton:hover{
+    background-color: #444444;
+    color: #ffffff;
+}
+QPushButton#grayButton:pressed{
+    background-color: #323232;
+    color: #c4c4c4;
+}
+QPushButton#grayButton:disabled{
+    background-color: #212121;
+    color: #666666;
+}
+QPushButton#blueButton{
+    border: 2px solid #131313;
+    background-color: #0091a1;
+    color: 131313;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Arial";
+    font-weight:400;
+}
+QPushButton#blueButton:hover{
+    background-color: #29b6c5;
+    color: 131313;
+}
+QPushButton#blueButton:pressed{
+    background-color: #0091a1;
+    color: #131313;
+}
+QPushButton#blueButton:disabled{
+    background-color: #212121;
+    color: #666666;
+}
+QPushButton#rgicheckbox {
+    border: 0px solid #0091a1;
+    background-color: #323232;
+    color: #c4c4c4;
+}
+QPushButton#rgicheckbox:hover{
+    background-color: #444444;
+    color: #ffffff;
+}
+QPushButton#rgicheckbox:checked {
+    border-image: url(:/Perceptron/Resources/button/rigidBodyButtonChecked.png);
+}
+QPushButton#rgicheckboxrepeat {
+    border-image: url(:/Perceptron/Resources/button/rigidBtnRepeat.png);
+    background-color: #323232;
+    color: #c4c4c4;
+}
+QPushButton#rgicheckboxrepeat:hover{
+    border-image: url(:/Perceptron/Resources/button/rigidBtnRepeat.png);
+    background-color: #444444;
+    color: #ffffff;
+}
+QPushButton#rgicheckboxrepeat:checked {
+    border-image: url(:/Perceptron/Resources/button/rigidBtnRepeatchecked.png);
+}
+QListView#devicelistWidget{
+    color: #c4c4c4;
+    border: 0px;
+    background: rgb(33, 33, 33);
+    alternate-background-color: rgb(27, 27, 27);
+}
+QListView#devicelistWidget::item{
+   height:40px;
+   color: #c4c4c4;
+}
+QLineEdit#vrdevicecustomedit{
+    border: 0px;
+    background-color: transparent;
+    selection-color: rgb(99, 99, 99);
+    selection-background-color: rgb(150, 150, 150);
+    height: 38px;
+    padding: 5px;
+    color: 0x999999;
+    text-align: center;
+}
+QLabel#bottomlinelabel{
+    border-bottom-width: 2px;
+    border-bottom-color: #999999;
+    border-style: solid;
+    padding-bottom: 10px;
+}
+QScrollBar:vertical {
+   border: 5px solid rgb(33, 33, 33);
+   background: rgb(19, 19, 19);
+   width: 14px;
+   margin: 0px 0 0px 0;
+}
+QScrollBar::handle:vertical {
+    border:2px solid rgb(19, 19, 19);
+    border-radius: 10px;
+    background: rgb(50, 50, 50);
+    min-height: 36px;
+}
+QScrollBar::add-line:vertical {
+   border: 0px solid grey;
+   background: #32CC99;
+   height: 0px;
+   subcontrol-position: bottom;
+   subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+   border: 0px solid grey;
+   background: #32CC99;
+   height: 0px;
+   subcontrol-position: top;
+   subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+   border: 0px solid grey;
+   width: 0px;
+   height: 0px;
+   background: white;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+   background: none;
+}
+QToolTip{
+  border: 0px;
+  background-color: #60A4AD;
+  color: #131313;
+}
+QComboBox#pcdevicecombo{
+    border: 2px solid #323232;
+    background: #0F0F0F;
+    color: #C4C4C4;
+}
+QComboBox#pcdevicecombo::drop-down{
+    background: #323232;
+    width:26px;
+}
+QComboBox#pcdevicecombo::down-arrow {
+     image: url(:/Perceptron/Resources/button/server_arrow.png);
+}
+QMenu#TrayMenu{
+    background:#131313;
+    color: #b4b4b4;
+    width:100px;
+    height: 77px;
+    padding: 0px 0px 0px 0px;
+}
+QMenu#TrayMenu::item{
+    border: 1px solid #333333;
+    background:#212121;
+    color: #b4b4b4;
+    height:28px;
+    width:68px;
+    margin: 0px, 0px, 0px, 0px;
+    padding:0px 0px 0px 30px;
+}
+QMenu#TrayMenu::icon{
+    padding:0px 0px 0px 20px;
+}
+QMenu#TrayMenu::item:selected{
+    background: #323232;
+}
+QMenu#TrayMenu::separator{
+    height:0px;
+    background:#6D6D6D;
+    margin:0px 0px 0px 0px;
+}

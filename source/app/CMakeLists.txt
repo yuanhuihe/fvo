@@ -9,7 +9,7 @@ find_package(Qt5LinguistTools)
 
 
 # Target name
-set(target fvo_app)
+set(target fvoApp)
 
 # Tell CMake to run moc when necessary:
 set(CMAKE_AUTOMOC ON)
@@ -18,16 +18,20 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # Language rc
-SET(Lang_files ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/fvo_app_zh.ts)
-SET(Lang_en_files ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/fvo_app_en.ts)
+SET(Lang_files ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/gui/fvoApp_zh.ts)
+SET(Lang_en_files ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/gui/fvoApp_en.ts)
 QT5_CREATE_TRANSLATION(LangSrcs ${Lang_files})
 QT5_CREATE_TRANSLATION(LangenSrcs ${Lang_en_files})
 
-# Image, version rc
-QT5_ADD_RESOURCES(fvo_app_QRC ${CMAKE_CURRENT_SOURCE_DIR}/fvo_app.qrc)
-#set(fvo_app_RC ${CMAKE_CURRENT_SOURCE_DIR}/fvo_app.rc)
-
 add_definitions(-DUNICODE -D_UNICODE)
+
+
+# Image, version rc
+QT5_ADD_RESOURCES(fvo_app_QRC ${CMAKE_CURRENT_SOURCE_DIR}/gui/fvoApp.qrc)
+if (MSVC)
+ set(fvo_app_RC ${CMAKE_CURRENT_SOURCE_DIR}/gui/fvoApp.rc)
+endif ()
+
 
 # Exit here if required dependencies are not met
 message(STATUS "App: ${target}")
@@ -48,6 +52,10 @@ file(GLOB sources
     "${source_path}/*.cpp"
     "${source_path}/*.hpp"
     "${source_path}/*.h"
+    "${source_path}/gui/*.cpp"
+    "${source_path}/gui/*.hpp"
+    "${source_path}/gui/*.h"
+    "${source_path}/gui/fvoApp.ui"
 )
 
 
@@ -82,13 +90,13 @@ target_include_directories(${target}
     PRIVATE
 	${Qt5Widgets_INCLUDES}
 	${Qt5Network_INCLUDES}
-    ${PROJECT_BINARY_DIR}/source/include
     ${PROJECT_SOURCE_DIR}/source/include
     ${PROJECT_SOURCE_DIR}/source/fvo/include
+    ${PROJECT_BINARY_DIR}/source/fvo/include
 	${PROJECT_SOURCE_DIR}/thirdparty/
     ${DEFAULT_INCLUDE_DIRECTORIES}
    )
-
+message("    ${PROJECT_BINARY_DIR}/source/fvo/include")
 
 # 
 # Libraries
@@ -141,3 +149,4 @@ install(TARGETS ${target}
     RUNTIME DESTINATION ${INSTALL_BIN} COMPONENT fvo_app
     BUNDLE  DESTINATION ${INSTALL_BIN} COMPONENT fvo_app
 )
+

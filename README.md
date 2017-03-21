@@ -1,23 +1,35 @@
-#FVO is an Fast Visual Odometry library.#
-
-##required thirdparties##
-
-###OpenCV, 3.2 or high###
-How is it be used and how to install it?
-Used by binary library, so you must build it and place it in correct folder.
-
-###Sophus###
 
 
+ #1. Dependencies#
 
-###Boost###
-DONT USE SRC FILES, strongly suggest download and install boost by binary boost install package.
+##OpenCV, 3.2 or high##
+​		Uses with its binary library, so you must build it and place it in correct folder.
+
+##Sophus##
 
 
-##Build by cmake##
 
-###Windows x86_x64 on Windows 10###
-cmake -H. -Bbuild_x64 -G"Visual Studio 14 2015 Win64"
+##Boost##
+​		DONT USE ITS SRC FILES, strongly suggest to download its binary installer package.
 
-###Windows x86 on Windows 10###
-cmake -H. -Bbuild_x86 -G"Visual Studio 14 2015"
+
+
+
+
+
+#2. Build instruction#
+##Windows##
+​		x64: 
+​		cmake -H. -Bbuild_x64 -G"Visual Studio 14 2015 Win64"
+
+​		w32: 
+​		cmake -H. -Bbuild_x86 -G"Visual Studio 14 2015"
+
+
+##Linux/macOS##
+​		cmake -H. -Bbuild -G"Unix Makefiles"
+
+
+
+
+#3. Attentions#

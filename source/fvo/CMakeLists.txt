@@ -38,7 +38,9 @@ set(export_macro "${target_upper}_API")
 
 set(include_path "${CMAKE_CURRENT_SOURCE_DIR}/include/${target}")
 set(source_path  "${CMAKE_CURRENT_SOURCE_DIR}/src")
-#set(rc_file ${CMAKE_CURRENT_SOURCE_DIR}/src/${target}.rc)
+if (MSVC)
+ set(rc_file ${CMAKE_CURRENT_SOURCE_DIR}/src/${target}.rc)
+endif ()
 
 file(GLOB headers
     "${include_path}/*.h"
@@ -126,6 +128,7 @@ target_include_directories(${target}
 		${Sophus_INCLUDE_DIR}
 		${Boost_INCLUDE_DIRS}
 		${CHOLMOD_INCLUDE_DIR}
+		${PROJECT_BINARY_DIR}/source/fvo/include
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 

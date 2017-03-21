@@ -19,7 +19,7 @@ set(IDE_FOLDER "")
  
 # Examples
 set(IDE_FOLDER "App")
- #add_subdirectory(app)
+ add_subdirectory(app)
 
 set(IDE_FOLDER "Demo")
 #add_subdirectory(test)
