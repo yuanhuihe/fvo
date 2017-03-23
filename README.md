@@ -1,6 +1,6 @@
-#FVO is an Fast Visual Odometry library.
+# FVO is an Fast Visual Odometry library.
 
-##1. Dependencies
+## 1. Dependencies
 
 * OpenCV, 3.2 or high
 
@@ -22,7 +22,7 @@
 
 
 
-##2. Build instruction
+## 2. Build instruction
 
 * Windows
 
@@ -38,4 +38,4 @@ w32:
 
 
 
-##3. Attentions
+## 3. Attentions
